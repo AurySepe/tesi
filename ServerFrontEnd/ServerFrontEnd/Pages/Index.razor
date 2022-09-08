@@ -1,0 +1,29 @@
+﻿@page "/"
+@using ServerFrontEnd.ViewModel
+@using ServerFrontEnd.OperationManager
+@using ServerFrontEnd.Operations.Metrics
+@using ServerFrontEnd.Operations.ReleasesDeleter
+@inject RepositoryStorage RepoStorage
+@inject OperationManager OperationManager
+<PageTitle>repos</PageTitle>
+
+@if (!OperationManager.isWorking)
+{
+    <button type="submit" class="btn btn-primary" onclick="@startAll">StartAllRepos</button>
+}
+
+@foreach (var repo in RepoStorage.Items.Keys)
+{
+    <div class="list-group">
+        <RepositoryComponent RepositoryUrl=@repo></RepositoryComponent>
+    </div>
+}
+
+@code 
+{
+    public void startAll()
+    {
+        OperationManager.startAll(ReleasesDeleterOperation.TYPE);
+    }
+
+}

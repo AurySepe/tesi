@@ -1,0 +1,39 @@
+﻿@page "/newRepo"
+@using CompilerFrontEnd.Model
+@using CompilerFrontEnd.ViewModel
+@using CompilerFrontEnd.Validation
+@using Microsoft.AspNetCore.Components
+@using System.Text
+@using System.Text.Json
+@inject RepositoryStorage _repositoryStorage
+@inject NavigationManager _NavigationManager
+@inject HttpClient client
+<EditForm Model="@gitHubUrl" OnValidSubmit="@HandleValidSubmit" >
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>
+
+    <div class="form-group">
+        <label for="name">url</label>
+        <InputText class="form-control" id="name" @bind-Value="gitHubUrl.Url"/>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+@code {
+
+    GitHubUrl gitHubUrl = new GitHubUrl();
+    
+    public async Task HandleValidSubmit()
+    {
+        Repository repo = Repository.UrlToRepo(gitHubUrl.Url);
+        _repositoryStorage.AddItem(repo);
+        await client.PostAsync("newRepo", new StringContent(JsonSerializer.Serialize(repo), Encoding.UTF8, "application/json"));
+        _NavigationManager.NavigateTo("/");
+
+    }
+
+    
+    
+}

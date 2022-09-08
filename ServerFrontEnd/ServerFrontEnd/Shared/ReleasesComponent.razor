@@ -1,0 +1,74 @@
+﻿@using ServerFrontEnd.Model
+@using ServerFrontEnd.OperationManager
+@using ServerFrontEnd.Operations.Interfaces
+@using ServerFrontEnd.Operations.Releases
+@using ServerFrontEnd.ViewModel
+@inject RepositoryStorage _RepositoryStorage
+@inject OperationManager OperationManager
+
+<div class="d-flex w-100 justify-content-between ">
+    <h1>Releases</h1>
+    @if (repo.Releases().State == RepositoryOperation.SUCCEDED)
+    {
+        <h5 class="mb-1">le releases trovate sono: </h5>
+        <ul class="list-group">
+
+
+            @foreach (var commit in repo.Releases().Data.Commits )
+            {
+            <div>
+                <h5 class="mb-1">@commit, </h5>
+            </div>
+
+            }
+        </ul>
+    }
+    else if (repo.Releases().State == RepositoryOperation.PENDING)
+    {
+        <h5 class="mb-1">Sta lavorando</h5>
+    }
+    else if (repo.Releases().State == RepositoryOperation.FAILED)
+    {
+        <h5 class="mb-1">La clonazione ha fallito</h5>
+    }
+    else if (repo.Releases().State == RepositoryOperation.CREATED)
+    {
+        <button type="button" class="btn btn-primary" @onclick="findReleases">findReleases</button>
+    }
+    else if (repo.Releases().State == RepositoryOperation.READY)
+    {
+        <h5 class="mb-1">sta aspettando la fine di un altra operazione</h5>
+    }
+</div>
+
+@code {
+
+    [Parameter]
+    public String Origin { get; set; }
+
+    Repository repo;
+
+    protected override void OnInitialized()
+    {
+        repo = _RepositoryStorage.Items[Origin];
+        _RepositoryStorage.OnChange += OnMyChangeHandler;
+    }
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= OnMyChangeHandler;
+    }
+
+    
+    private async void OnMyChangeHandler()
+    {
+    // InvokeAsync is inherited, it syncs the call back to the render thread
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void findReleases()
+    {
+        OperationManager.AddOperation(repo, ReleasesOperation.TYPE);
+    }
+
+}

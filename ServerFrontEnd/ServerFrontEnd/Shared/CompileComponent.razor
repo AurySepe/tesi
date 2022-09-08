@@ -1,0 +1,62 @@
+﻿@using ServerFrontEnd.Model
+@using ServerFrontEnd.OperationManager
+@using ServerFrontEnd.Operations.Compiling
+@using ServerFrontEnd.Operations.Interfaces
+@using ServerFrontEnd.ViewModel
+@inject RepositoryStorage _RepositoryStorage
+@inject OperationManager OperationManager
+
+<div class="d-flex w-100 justify-content-between">
+    <h1>Compile</h1>
+    @if (repo.Compile().State == RepositoryOperation.SUCCEDED)
+    {
+        <h5 class="mb-1">successo: </h5>
+       
+        
+    }
+    else if (repo.Compile().State == RepositoryOperation.PENDING)
+    {
+        <h5 class="mb-1">Sta lavorando</h5>
+    }
+    else if (repo.Compile().State == RepositoryOperation.FAILED)
+    {
+        <h5 class="mb-1">La compilazione ha fallito</h5>
+    }
+    else if (repo.Compile().State == RepositoryOperation.CREATED)
+    {
+        <button type="button" class="btn btn-primary" @onclick="compile">Compile</button>
+    }
+    else if (repo.Compile().State == RepositoryOperation.READY)
+    {
+        <h5 class="mb-1">sta aspettando la fine di un altra operazione</h5>
+    }
+</div>
+@code {
+    [Parameter]
+    public String Origin { get; set; }
+
+    Repository repo;
+
+    protected override void OnInitialized()
+    {
+        repo = _RepositoryStorage.Items[Origin];
+        _RepositoryStorage.OnChange += OnMyChangeHandler;
+    }
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= OnMyChangeHandler;
+    }
+
+    
+    private async void OnMyChangeHandler()
+    {
+    // InvokeAsync is inherited, it syncs the call back to the render thread
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void compile()
+    {
+        OperationManager.AddOperation(repo,CompileOperation.TYPE);
+    }
+}

@@ -1,0 +1,2 @@
+OPERATIONNAME = "CLONING"
+PATH = "/results"

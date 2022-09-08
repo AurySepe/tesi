@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pattern4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pattern4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

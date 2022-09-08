@@ -1,0 +1,2 @@
+OPERATIONNAME = "COMPILING"
+PATH = "/results"

@@ -1,0 +1,84 @@
+﻿@using ServerFrontEnd.Model
+@using ServerFrontEnd.ViewModel
+@inject RepositoryStorage _RepositoryStorage
+
+<NavLink href="@($"repository/{repo.Author}/{repo.Name}")" class="@($"{backgroundClass}")">
+    <div class="d-flex w-100 justify-content-between ">
+        <h5 class="mb-1">@repo.Name</h5>
+        <small>@repo.Author</small>
+    </div>
+    <p class="mb-1">@repo.OriginUrl</p>
+</NavLink>
+
+@code {
+
+    [Parameter] 
+    public String RepositoryUrl { get; set; }
+
+    private String backgroundClass;
+
+    private Repository repo;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _RepositoryStorage.OnChange += OnMyChangeHandler;
+        repo = _RepositoryStorage.Items[RepositoryUrl];
+        if (repo.Status == Repository.SUCCEDED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-success";
+        }
+        else if (repo.Status == Repository.FAILED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-danger";
+        }
+        else if (repo.Status == Repository.PENDING)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-warning";
+        }
+        else if (repo.Status == Repository.READY || repo.Status == Repository.CREATED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start ";
+        }
+        
+        
+    }
+    
+    
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= OnMyChangeHandler;
+    }
+
+    private void doWork()
+    {
+        if (repo.Status == Repository.SUCCEDED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-success";
+        }
+        else if (repo.Status == Repository.FAILED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-danger";
+        }
+        else if (repo.Status == Repository.PENDING)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start bg-warning";
+        }
+        else if (repo.Status == Repository.READY || repo.Status == Repository.CREATED)
+        {
+            backgroundClass = "list-group-item list-group-item-action flex-column align-items-start ";
+        }
+        StateHasChanged();
+    }
+
+    
+    private async void OnMyChangeHandler()
+    {
+    // InvokeAsync is inherited, it syncs the call back to the render thread
+        await InvokeAsync(doWork);
+    }
+    
+    
+
+}

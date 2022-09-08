@@ -1,0 +1,41 @@
+﻿@page "/repository/{RepositoryAuthor}/{RepositoryName}"
+@using CompilerFrontEnd.Model
+@using CompilerFrontEnd.OperationManager
+@using CompilerFrontEnd.Services
+@using CompilerFrontEnd.ViewModel
+@inject RepositoryStorage _RepositoryStorage
+<RepositoryComponent RepositoryUrl="@origin"></RepositoryComponent>
+<CloningComponent Origin="@origin"></CloningComponent>
+<ReleasesComponent Origin="@origin"></ReleasesComponent>
+<ReleasesCloningComponent Origin="@origin"></ReleasesCloningComponent>
+<CompileComponent Origin="@origin"></CompileComponent>
+<DetectComponent Origin="@origin"></DetectComponent>
+<HistoryComponent Origin="@origin"></HistoryComponent>
+<MetricsComponent Origin="@origin"></MetricsComponent>
+
+@code {
+    [Parameter]
+    public String RepositoryAuthor { get; set; }
+    
+    [Parameter]
+    public String RepositoryName { get; set; }
+
+    public String origin;
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        origin = $"https://github.com/{RepositoryAuthor}/{RepositoryName}.git";
+        _RepositoryStorage.OnChange += StateHasChanged;
+
+    }
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= StateHasChanged;
+    }
+
+    
+
+}

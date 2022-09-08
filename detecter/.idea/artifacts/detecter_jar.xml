@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="detecter:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/detecter_jar</output-path>
+    <root id="archive" name="detecter.jar">
+      <element id="module-output" name="detecter" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/pattern4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/5.15.0/amqp-client-5.15.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,83 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = CompilerFrontEnd
+build_property.RootNamespace = CompilerFrontEnd
+build_property.ProjectDir = C:\Users\aurel\Desktop\progetto tesi\Frontend\CompilerFrontEnd\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\aurel\Desktop\progetto tesi\Frontend\CompilerFrontEnd
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Pages/NewRepo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3UmVwby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Pages/RepositoryPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3NpdG9yeVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/CloningComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENsb25pbmdDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/CompileComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBpbGVDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/DetectComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERldGVjdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/HistoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhpc3RvcnlDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/MetricsComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldHJpY3NDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/ReleasesCloningComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlbGVhc2VzQ2xvbmluZ0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/ReleasesComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlbGVhc2VzQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/RepositoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlcG9zaXRvcnlDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-bh2ba2mpkk
+
+[C:/Users/aurel/Desktop/progetto tesi/Frontend/CompilerFrontEnd/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-029ssoarml

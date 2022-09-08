@@ -1,0 +1,129 @@
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\appsettings.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.staticwebassets.runtime.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.exe
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.deps.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.runtimeconfig.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.AssemblyReference.cache
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfoInputs.cache
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfo.cs
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CoreCompileInputs.cache
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\scopedcss\bundle\MessageConverter.styles.css
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CopyComplete
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\refint\MessageConverter.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\MessageConverter.genruntimeconfig.cache
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\obj\Debug\net6.0\ref\MessageConverter.dll
+C:\Users\aurel\RiderProjects\CompilerFrontEnd\MessageConverter\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\appsettings.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.staticwebassets.runtime.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.exe
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.deps.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.runtimeconfig.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.AssemblyReference.cache
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfoInputs.cache
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfo.cs
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CoreCompileInputs.cache
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\scopedcss\bundle\MessageConverter.styles.css
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CopyComplete
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\refint\MessageConverter.dll
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.genruntimeconfig.cache
+C:\Users\aurel\RiderProjects\MessageConverter\MessageConverter\obj\Debug\net6.0\ref\MessageConverter.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\appsettings.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.staticwebassets.runtime.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.exe
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.deps.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.runtimeconfig.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Features.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.AssemblyReference.cache
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfoInputs.cache
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.AssemblyInfo.cs
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CoreCompileInputs.cache
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\scopedcss\bundle\MessageConverter.styles.css
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.csproj.CopyComplete
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\refint\MessageConverter.dll
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.pdb
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\MessageConverter.genruntimeconfig.cache
+C:\Users\aurel\Desktop\progetto tesi\MessageConverter\MessageConverter\obj\Debug\net6.0\ref\MessageConverter.dll

@@ -1,0 +1,64 @@
+﻿@using CompilerFrontEnd.ViewModel
+@using CompilerFrontEnd.Model
+@using CompilerFrontEnd.OperationManager
+@using CompilerFrontEnd.Operations.Compiling
+@inject RepositoryStorage _RepositoryStorage
+@inject OperationManager OperationManager
+
+<div class="d-flex w-100 justify-content-between">
+    <h1>Compile</h1>
+    @if (repo.Compile().State == RepositoryOperation.SUCCEDED)
+    {
+        <h5 class="mb-1">le releases compilate con successo sono: </h5>
+        <ul class="list-group">
+
+
+            @foreach (var commit in repo.Compile().Data.SuccessCompile )
+            {
+                <div>
+                    <h5 class="mb-1">@commit, </h5>
+                </div>
+
+            }
+        </ul>
+        
+    }
+    else if (repo.Compile().State == RepositoryOperation.PENDING)
+    {
+        <h5 class="mb-1">Sta lavorando</h5>
+    }
+    else if (repo.Compile().State == RepositoryOperation.FAILED)
+    {
+        <h5 class="mb-1">La compilazione ha fallito</h5>
+    }
+    else if (repo.Compile().State == RepositoryOperation.CREATED)
+    {
+        <button type="button" class="btn btn-primary" @onclick="compile">Compile</button>
+    }
+    else if (repo.Compile().State == RepositoryOperation.READY)
+    {
+        <h5 class="mb-1">sta aspettando la fine di un altra operazione</h5>
+    }
+</div>
+@code {
+    [Parameter]
+    public String Origin { get; set; }
+
+    Repository repo;
+
+    protected override void OnInitialized()
+    {
+        repo = _RepositoryStorage.Items[Origin];
+        _RepositoryStorage.OnChange += StateHasChanged;
+    }
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= StateHasChanged;
+    }
+
+    public void compile()
+    {
+        OperationManager.AddOperation(repo,CompileOperation.TYPE);
+    }
+}

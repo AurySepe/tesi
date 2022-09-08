@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aurel\\Desktop\\progetto tesi\\MessageConverter\\MessageConverter\\MessageConverter.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aurel\\Desktop\\progetto tesi\\MessageConverter\\MessageConverter\\MessageConverter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aurel\\Desktop\\progetto tesi\\MessageConverter\\MessageConverter\\MessageConverter.csproj",
+        "projectName": "MessageConverter",
+        "projectPath": "C:\\Users\\aurel\\Desktop\\progetto tesi\\MessageConverter\\MessageConverter\\MessageConverter.csproj",
+        "packagesPath": "C:\\Users\\aurel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aurel\\Desktop\\progetto tesi\\MessageConverter\\MessageConverter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aurel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.SignalR.Client": {
+              "target": "Package",
+              "version": "[7.0.0-preview.7.22376.6, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+version: "3.8"
+services:
+#  bridge:
+#    build: Bridge
+#    container_name: bridge
+#    networks:
+#      - rabbitmq_go_net
+#      - hubs_go_net
+#    restart: on-failure
+#    depends_on:
+#      - rabbitmq
+#  converter:
+#    container_name: converter
+#    build: MessageConverter
+#    hostname: hubs
+#    depends_on:
+#      - rabbitmq
+#    networks:
+#      - rabbitmq_go_net
+#      - hubs_go_net
+#    ports:
+#      - 5123:80
+#  frontend:
+#    container_name: frontend
+#    build: Frontend/CompilerFrontEnd
+#    restart: on-failure
+#    depends_on:
+#      - repository
+#      - converter
+#    ports:
+#      - 8080:80
+
+  frontend:
+    container_name: frontend
+    build: ServerFrontEnd
+    restart: on-failure
+    networks:
+      - rabbitmq_go_net
+#      - repository_network
+#    depends_on:
+#      - repository
+    ports:
+      - 8080:80
+#  repositorylistner:
+#    container_name: repositorylistner
+#    build:
+#      context: repository
+#      dockerfile: Dockerfile.listner
+#    networks:
+#      - rabbitmq_go_net
+#    restart: on-failure
+#    depends_on:
+#      - rabbitmq
+#
+#    volumes:
+#      - database:/python-docker/DB
+#  repository:
+#    container_name: repository
+#    build: repository
+#    hostname: repository
+#    networks:
+#      - repository_network
+#    volumes:
+#      - database:/python-docker/DB
+#    ports:
+#      - 5000:5000
+  cloner:
+    container_name: cloner
+    build: GitHubCloner
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+  releases:
+    container_name: releases
+    build: Releases
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+  releasescloner:
+    container_name : releasescloner
+    build: releaseCloner
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+  compiler:
+    container_name: compiler
+    build: Compiler
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+  detecter:
+    container_name: detecter
+    build: detecter
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+
+  classhistory:
+    container_name: classhistory
+    build: ClassIdentifier
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+
+  metrics:
+    container_name: metrics
+    build: QualityTest
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+  releasesdeleter:
+    container_name: releasesdeleter
+    build: ReleasesDeleter
+    networks:
+      rabbitmq_go_net:
+    restart: on-failure
+    depends_on:
+      - rabbitmq
+    volumes:
+      - results:/results
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    hostname: rabbitmq
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "http://localhost:15672" ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+        - rabbitmq_go_net
+
+networks:
+  rabbitmq_go_net:
+    driver: bridge
+#  repository_network:
+#    driver: bridge
+  #hubs_go_net:
+  #  driver: bridge
+
+
+volumes:
+#  database:
+  results:
+    external: true
+    name: results
+

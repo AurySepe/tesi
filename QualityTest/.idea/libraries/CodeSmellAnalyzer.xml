@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="CodeSmellAnalyzer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../code smells/codeSmellsProva/out/artifacts/CodeSmellAnalyzer_jar/CodeSmellAnalyzer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../code smells/codeSmellsProva/out/artifacts/CodeSmellAnalyzer_jar/CodeSmellAnalyzer.jar!/OSGI-OPT/src" />
+    </SOURCES>
+  </library>
+</component>

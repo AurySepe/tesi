@@ -1,0 +1,49 @@
+﻿@page "/AddRepositories"
+@using ServerFrontEnd.Model
+@using ServerFrontEnd.ViewModel
+@using System.Text.Json
+@using System.Text
+@inject RepositoryStorage _repositoryStorage
+@inject NavigationManager _NavigationManager
+
+
+<InputFile OnChange="@OnInputFileChange"/>
+<button type="submit" onclick="@OnSubmit">Upload Selected File(s)</button>
+
+@code {
+
+    List<Repository> _repositories = new List<Repository>();
+
+    private async void OnInputFileChange(InputFileChangeEventArgs e)
+    {
+        _repositories.Clear();
+        MemoryStream ms = new MemoryStream();
+        await e.File.OpenReadStream().CopyToAsync(ms);
+        
+        String totalString = System.Text.Encoding.UTF8.GetString(ms.ToArray());
+        Console.WriteLine(totalString);
+        String[] urls = totalString.Split("\n");
+
+        foreach (String url in urls)
+        {
+            String newUrl = url.Trim();
+            Console.WriteLine(newUrl);
+            Repository repository = Repository.UrlToRepo(newUrl);
+            _repositories.Add(repository);
+        }
+    }
+    
+    
+    public void OnSubmit()
+    {
+        foreach (Repository repository in _repositories)
+        {
+            _repositoryStorage.AddItem(repository);
+            // await client.PostAsync("newRepo", new StringContent(JsonSerializer.Serialize(repository), Encoding.UTF8, "application/json"));
+            
+        }
+        _NavigationManager.NavigateTo("/");
+        
+    }
+    
+}

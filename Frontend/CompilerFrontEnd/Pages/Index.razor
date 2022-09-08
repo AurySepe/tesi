@@ -1,0 +1,17 @@
+﻿@page "/"
+@using CompilerFrontEnd.ViewModel
+@inject RepositoryStorage RepoStorage
+<PageTitle>repos</PageTitle>
+
+@foreach (var repo in RepoStorage.Items.Keys)
+{
+    <div class="list-group">
+        <RepositoryComponent RepositoryUrl=@repo></RepositoryComponent>
+    </div>
+}
+
+@code 
+{
+    
+
+}

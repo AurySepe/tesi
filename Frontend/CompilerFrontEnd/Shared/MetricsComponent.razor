@@ -1,0 +1,56 @@
+﻿@using CompilerFrontEnd.ViewModel
+@using CompilerFrontEnd.Model
+@using CompilerFrontEnd.OperationManager
+@using CompilerFrontEnd.Operations.Metrics
+@inject RepositoryStorage _RepositoryStorage
+@inject OperationManager OperationManager
+
+<div class="d-flex w-100 justify-content-between">
+    <h1>Metrics</h1>
+    @if (repo.Metrics().State == RepositoryOperation.SUCCEDED)
+    {
+        <h5 class="mb-1">le metriche sono state calcolate con successo</h5>
+        
+        
+    }
+    else if (repo.Metrics().State == RepositoryOperation.PENDING)
+    {
+        <h5 class="mb-1">Sta lavorando</h5>
+    }
+    else if (repo.Metrics().State == RepositoryOperation.FAILED)
+    {
+        <h5 class="mb-1">ha fallito</h5>
+    }
+    else if (repo.Metrics().State == RepositoryOperation.CREATED)
+    {
+        <button type="button" class="btn btn-primary" @onclick="getMetrics">get Metrics</button>
+    }
+    else if (repo.Metrics().State == RepositoryOperation.READY)
+    {
+        <h5 class="mb-1">sta aspettando la fine di un altra operazione</h5>
+    }
+</div>
+@code {
+
+    [Parameter]
+    public String Origin { get; set; }
+
+    Repository repo;
+
+    protected override void OnInitialized()
+    {
+        repo = _RepositoryStorage.Items[Origin];
+        _RepositoryStorage.OnChange += StateHasChanged;
+    }
+
+    protected void Dispose()
+    {
+        _RepositoryStorage.OnChange -= StateHasChanged;
+    }
+
+    public void getMetrics()
+    {
+        OperationManager.AddOperation(repo, MetricsOperation.TYPE);
+    }
+
+}
