@@ -2,6 +2,7 @@ import concurrent
 import os
 import shutil
 
+from Compiling.BuildSystemDetection import detectBuildSystem
 from Model.CompileRequest import CompileRequest
 from Model.CompileResult import CompileResult
 import concurrent.futures
@@ -56,8 +57,9 @@ def compileReleaseAndGetResult(pathOfRelease: str, pathOflogs, pathOfBuild):
     release = pathOfRelease.split("/")[-1]
     result = True
     try:
-        compileRelease(pathOfRelease, pathOflogs)
-        extractBuild(pathOfRelease, pathOfBuild)
+        compile,extract = detectBuildSystem(pathOfRelease)
+        compile(pathOfRelease, pathOflogs)
+        extractBuild(pathOfRelease, pathOfBuild,extract)
     except Exception as e:
         print(e)
         result = False
@@ -73,8 +75,8 @@ def getPathsOfReleases(releasesPath, logPath, buildPath):
     return result
 
 
-def extractBuild(pathOfRelease, pathOfBuild):
-    paths = findCompiledClasses(pathOfRelease)
+def extractBuild(pathOfRelease, pathOfBuild,extractMethod):
+    paths = extractMethod(pathOfRelease)
     for path, name in paths:
         pathToCopy = os.path.join(pathOfBuild,name)
         shutil.copytree(path, pathToCopy)

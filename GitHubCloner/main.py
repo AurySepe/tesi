@@ -1,16 +1,10 @@
-#!/usr/bin/env python
+from GithubCloner.cloneLogic import clone
 
-import os
-import sys
+#github's url of repo
+ORIGIN = ""
 
-from Inject.Singletons import Listner
+#directory of output
+OUTPUTDIR = ""
 
-if __name__ == '__main__':
-    try:
-        Listner.listen()
-    except KeyboardInterrupt:
-        print('Interrupted')
-        try:
-            sys.exit(0)
-        except SystemExit:
-            os._exit(0)
+
+clone(origin=ORIGIN,pathToClone=OUTPUTDIR)

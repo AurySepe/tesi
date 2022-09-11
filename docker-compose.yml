@@ -1,34 +1,7 @@
 version: "3.8"
 services:
-#  bridge:
-#    build: Bridge
-#    container_name: bridge
-#    networks:
-#      - rabbitmq_go_net
-#      - hubs_go_net
-#    restart: on-failure
-#    depends_on:
-#      - rabbitmq
-#  converter:
-#    container_name: converter
-#    build: MessageConverter
-#    hostname: hubs
-#    depends_on:
-#      - rabbitmq
-#    networks:
-#      - rabbitmq_go_net
-#      - hubs_go_net
-#    ports:
-#      - 5123:80
-#  frontend:
-#    container_name: frontend
-#    build: Frontend/CompilerFrontEnd
-#    restart: on-failure
-#    depends_on:
-#      - repository
-#      - converter
-#    ports:
-#      - 8080:80
+
+
 
   frontend:
     container_name: frontend

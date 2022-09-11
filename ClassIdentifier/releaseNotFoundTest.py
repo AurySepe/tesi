@@ -1,4 +1,8 @@
 from pydriller import Repository
+
+from releaseHistoryLogic import getClassesHistory
+
+
 def traverse_commits(self):
     """
     Analyze all the specified commits (all of them by default), returning
@@ -32,15 +36,11 @@ def traverse_commits(self):
 
 Repository.traverse_commits = traverse_commits
 
-PathToRepo = "C:/Users/aurel/Desktop/TestSource/libgdx"
+PathToRepo = "C:/Users/aurel/Desktop/Lavoro tesi/Ant/ant"
+OutputDir = "C:/Users/aurel/Desktop/Lavoro tesi/Ant/history"
+releases = ["5a008aafac7cc571bd43d3d911964d77168cf381","a525602c46801329510c2f480ebdc292f04d2467","068f7348847e10c8deca027f67e7142c559cdfa0","e25567d31849baafa30f21ac10cfed5eb958e245","395544ee5053921a9332828a9dd23a6fa32f9760","e4ed29508743d2911725ef07dc84920567c4d2a1","83213625e56a8ca6f149156740ff5c48bcb83525"]
+releasesOutputFile = "C:/Users/aurel/Desktop/Lavoro tesi/Ant/releases.txt"
 
-repo = Repository(PathToRepo)
-numberOfModifedFiles = 0
-for commit in repo.traverse_commits():
-    for modifedFile in commit.modified_files:
-        print(modifedFile.filename)
-        numberOfModifedFiles += 1
-
-print(numberOfModifedFiles)
+getClassesHistory(PathToRepo,OutputDir,releases,releasesOutputFile)
 
 
