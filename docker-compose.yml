@@ -131,8 +131,8 @@ services:
         - 5672:5672
         - 15672:15672
     volumes:
-        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
-        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+        - rabbitmqlib:/var/lib/rabbitmq/
+        - rabbitmqtlog:/var/log/rabbitmq
     networks:
         - rabbitmq_go_net
 
@@ -147,6 +147,8 @@ networks:
 
 volumes:
 #  database:
+  rabbitmqtlog:
+  rabbitmqlib:
   results:
     external: true
     name: results
