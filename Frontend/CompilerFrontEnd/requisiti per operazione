@@ -1,8 +1,0 @@
-﻿convertitore da json a oggetto
-maker di oggetti ready e created
-una sottoclasse di RepositoryOperation che rappresenta i dati dell'operazione
-un estensione di Repository per accedere ai dati dell'operazione
-una lista delle operazioni da cui dipende
-Una stringa che rappresenta il tipo dell'operazione, da dichiarare come constante nella classe che rappresenta l'operazione
-un oggetto che rappresenta la richiesta
-uno starter che avvia l'operazione
