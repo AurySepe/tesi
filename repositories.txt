@@ -1,0 +1,15 @@
+https://github.com/mybatis/mybatis-3.git
+https://github.com/Netflix/zuul.git
+https://github.com/ben-manes/caffeine.git
+https://github.com/alibaba/arthas.git
+https://github.com/apolloconfig/apollo.git
+https://github.com/iBotPeaches/Apktool.git
+https://github.com/LMAX-Exchange/disruptor.git
+https://github.com/mockito/mockito.git
+https://github.com/Netflix/Hystrix.git
+https://github.com/ReactiveX/RxJava.git
+https://github.com/skylot/jadx.git
+https://github.com/Netflix/eureka.git
+https://github.com/JSQLParser/JSqlParser.git
+https://github.com/spring-projects/spring-data-jpa.git
+https://github.com/google/data-transfer-project.git
